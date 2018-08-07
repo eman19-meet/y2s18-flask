@@ -1,1 +1,18 @@
 <!-- Put the HTML template for your page here! -->
+<!doctype html>
+    <html>
+    <head>
+    	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    	<title>EMAN</title>
+    </head>
+        <body>
+            <h1> Hello! swimming</h1>
+            <p>because mlabbas 3a lozzzzz</p>
+            <h2>favorite players :</h2>
+            <ul>
+            	{% for i in favPlayers %}
+            	<li>{{i}}</li>
+            	{% endfor %}
+            </ul>
+        </body>
+    </html>
