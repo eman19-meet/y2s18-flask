@@ -6,13 +6,19 @@
     	<title>EMAN</title>
     </head>
         <body>
-            <h1> Hello! swimming</h1>
-            <p>because mlabbas 3a lozzzzz</p>
-            <h2>favorite players :</h2>
-            <ul>
-            	{% for i in favPlayers %}
-            	<li>{{i}}</li>
-            	{% endfor %}
-            </ul>
+        	<div>
+				<h1> Hello!</h1>
+				<img src="https://media.giphy.com/media/3o6ZtbpbJ0DCrf8uxW/giphy.gif" width="400" height="300">
+					{% if likes_same_sport == False %}
+						<h1>swimmingggggg</h1>
+						<p>because mlabbas 3a lozzzzz</p>
+					{% endif %}
+				<h2>favorite players :</h2>
+				<ul>
+					{% for i in favPlayers %}
+						<li>{{i}}</li>
+					{% endfor %}
+       			</ul>
+       		</div>
         </body>
     </html>
